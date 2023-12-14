@@ -1,0 +1,51 @@
+<!DOCTYPE html >
+<html>
+   <head> 
+      <title>Lab Activity3</title>
+      <script type = "text/javascript">
+     alert ("Elaf Yousef Aloufi - 1911265");
+	 
+
+		
+      </script>
+	  
+	  <script type = "text/javascript"> 
+	  
+	  	var num; 
+		var counter=1;
+		while(counter <= 3){
+ 		num = window.prompt ( "Please enter a number between 4 and 15: " );
+		
+		if (num> 15 || num < 4){
+			alert ("***Invalid inputs: you are out of the range, only number between 4 and 15 are allowed***");
+			break; 
+			}
+			else {
+			document.writeln("The factorial of number " + num + " is: "+ factorial(num) + "<br>");
+			
+			}
+		counter++;
+		}	
+		
+		function factorial(num){
+		
+					var number;
+					number= parseInt (num);
+					
+				
+				for (var i= 0; i<= number; i++ ){
+				if (number<=1){
+				return 1;
+				}
+				else {
+				return number * factorial(number-1);
+				}
+				}
+			
+		}
+		
+		
+	  </script>
+   </head>
+		 <body> </body>
+</html>

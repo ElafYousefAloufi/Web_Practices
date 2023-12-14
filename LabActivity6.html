@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>LabActivity6</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+	 var counter = $("#tab tr").length;
+	  console.log(counter);
+	  $("button").click(function(){
+	  $('tr:last-child').remove();
+	  var counter = $("#tab tr").length;
+	  console.log(counter);
+	  });
+	  
+	});
+	</script>
+</head>
+
+<body>
+
+<h2>HTML table</h2>
+
+<table border="1" id="tab">
+
+  <tr>
+    <th>First Name</th>
+    <th>Middle Name</th>
+    <th>Last Name</th>
+	<th>ID</th>
+  </tr>
+  
+  <tr>
+    <td>Elaf</td>
+    <td>Yousef</td>
+    <td>Aloufi</td>
+	 <td>1</td>
+  </tr>
+  
+  <tr>
+    <td>Hanin</td>
+    <td>Yousef</td>
+    <td>Aloufi</td>
+    <td>2</td>
+  </tr>
+  
+    <tr>
+     <td>Doaa</td>
+    <td>Yousef</td>
+    <td>Aloufi</td>
+    <td>3</td>
+  </tr>
+			
+</table>
+
+	<br/>
+  <button> Remove row </button> 
+  
+  
+</body>
+</html>
+

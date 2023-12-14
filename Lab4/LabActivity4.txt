@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script language="JavaScript">
+function change(url){
+
+document.getElementById("link1").href= "http://" + url;
+document.getElementById("link1").innerHTML = "http://" + url;
+
+}
+</script>
+</head>
+
+<body>
+<form name="form1">
+   <select name="menu1" onChange="change(this.options[menu1.selectedIndex].text)">
+	<option selected>www.javascriptsource.com</option>
+	<option>www.google.com</option>
+	<option>www.yahoo.com</option>
+   </select>
+<a id="link1" href="http://www.javascriptsource.com">http://www.javascriptsource.com</a>
+</form>
+
+</body>
+</html>
+
